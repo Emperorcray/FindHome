@@ -87,7 +87,7 @@ a{
     }
     /* This styles the section element */
     section{
-        height: 1000px;
+        height: 2000px;
         width: 100%;
         border: 1px solid;
     }
@@ -105,10 +105,18 @@ a{
     }
     .title{
         width: 40vw;
-        border: 1px solid white;
         font-size: 40px;
         padding: 20px;
         margin-left: 40px;
         font-weight: 700;
+    }
+    .featured_properties{
+        height: 600px;
+        width: 100%;
+        border: 1px solid;
+    }
+    .featured_titles{
+        height: 80px;
+        padding-left: 40px;
     }
 }

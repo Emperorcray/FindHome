@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FindHome: Real Estate Listings</title>
     <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
 </head>
@@ -43,11 +45,37 @@
             </div>
             <!-- Slideshow container -->
             <div class="slideshow_container">
-                <div class="myslides">
-                    <div class="slide_images"></div>
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide rounded-5" style="background-image: url(Images/Luxury\ Beach\ house.jpg);">Slide 1</div>
+                    <div class="swiper-slide rounded-5" style="background-image: url(Images/5\ beds\ 5\ bathrooms.avif);">Slide 2</div>
+                    <div class="swiper-slide rounded-5" style="background-image: url(Images/4\ bedroom\ 3\ bathrooms\ 2\ garages.jpg);">Slide 3</div>
+                    <div class="swiper-slide rounded-5" style="background-image: url(Images/insurance\ house.jpg);">Slide 4</div>
+                    <div class="swiper-slide rounded-5" style="background-image: url(Images/McMansions.jpg);">Slide 5</div>
+                    <div class="swiper-slide rounded-5" style="background-image: url(Images/Modern\ house.png);">Slide 6</div>
+                    <div class="swiper-slide rounded-5" style="background-image: url(Images/Castle\ house.webp);">Slide 7</div>
+                    <div class="swiper-slide rounded-5" style="background-image: url(Images/Architecture\ homes.jpg);">Slide 8</div>
+                    <div class="swiper-slide rounded-5" style="background-image: url(Images/Box\ houses.jpg);">Slide 9</div>
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    });
+                </script>
             </div>
-        </div>
+        </div>    
+
+
+
     </section>
     <footer></footer>
 </body>

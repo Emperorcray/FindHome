@@ -88,7 +88,7 @@ a{
     }
     /* This styles the section element */
     section{
-        height: 2000px;
+        height: 2500px;
         width: 100%;
         border: 1px solid;
     }
@@ -112,9 +112,8 @@ a{
         font-weight: 700;
     }
     .featured_properties{
-        height: 800px;
+        height: 790px;
         width: 100%;
-        border: 1px solid;
         display: grid;
         place-content: center;
     }
@@ -126,26 +125,49 @@ a{
         width: 100%;
         height: 100%;
     }
+    /* Slideshow container */
     .slideshow_container{
         height: 500px;
         width: 85vw;
-        border: 1px solid;
-    }
+   }
+   /* Each slide */
     .swiper-slide {
-        text-align: center;
         font-size: 18px;
         background: #444;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
     }
+    /* Slide image */
     .swiper-slide img {
         display: block;
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-}
+    /* Property information container */
+    .property_info{
+        height: 100px;
+        width: 25vw;
+        border: 1px solid grey;
+        backdrop-filter: blur(5px);
+        margin-top: 300px;
+        padding-left: 20px;
+    }
+    /* Property information text */
+    .price{
+        color: white;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    /* Property name and location text */
+    .property_name,.location{
+        color: gainsboro;
+        font-size: 14px;
+    }
+    .why_us{
+        height: 500px;
+        width: 100%;
+        border: 1px solid;
+    }
+}    

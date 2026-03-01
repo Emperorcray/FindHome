@@ -88,10 +88,11 @@ a{
     }
     /* This styles the section element */
     section{
-        height: 2500px;
+        height: 3500px;
         width: 100%;
         border: 1px solid;
     }
+    /* Main section container */
     .main_img{
         height: 600px;
         width: 100%;
@@ -99,11 +100,20 @@ a{
         justify-content: center;
         align-items: center;
     }
+    /* Main section image with hover effect */
     .main_section_image{
         height: 500px;
         width: 80vw;
         background-image: url("../Images/mainsectionhouse.jpg");
+        background-size: 100%;
+        transition: background-size 0.5s ease;
     }
+    /* Main section image hover effect */
+    .main_section_image:hover{
+        transition-duration: 0.5s ease;
+        background-size: 120%;
+    }
+    /* Title for the featured properties section */
     .title{
         width: 40vw;
         font-size: 40px;
@@ -111,16 +121,19 @@ a{
         margin-left: 40px;
         font-weight: 700;
     }
+    /* Container for the featured properties section */
     .featured_properties{
         height: 790px;
         width: 100%;
         display: grid;
         place-content: center;
     }
+    /* Title for the featured properties section */
     .featured_titles{
         height: 80px;
         padding-left: 40px;
     }
+    /* Container for the Swiper slideshow */
     .swiper {
         width: 100%;
         height: 100%;
@@ -143,7 +156,7 @@ a{
         display: block;
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        background-size: 100%;
     }
     /* Property information container */
     .property_info{
@@ -190,5 +203,106 @@ a{
     .reasons:hover{
         transition-duration: 0.5s;
         box-shadow: 0px 0px 10px 0px gray;
+    }
+    .reasons>i{
+        font-size: 40px;
+        font-weight: 600;
+    }
+    /* Reason title text */
+    .reasons_title{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    /* Reason information text */
+    .reasons_info{
+        font-size: 16px;
+        color: #555;
+    }
+    /* Market section */
+    .market{
+        height: 720px;
+        width: 100%;
+    }
+    /* Market section title */
+    .market_heading{
+        font-size:40px;
+        font-weight: 600;
+    }
+    /* Container for market information and image */
+    .market_info{
+        height: 600px;
+        width: 100%;
+    }
+    /* Market image */
+    .market_info>img{
+        height: 400px;
+        width: 40vw;
+    }
+    /* Container for market information boxes */
+    .market_info_div{
+        height: 400px;
+        width: 45vw;
+        gap: 10px;
+    }
+    /* Individual market information boxes */
+    .market_info_div>div{
+        height: 180px;
+        width: 20vw;
+        background-color: white;
+    }
+    /* Market information box hover effect */
+    .market_info_div>div:hover{
+        transition-duration: 0.5s;
+        background-color: black;
+        color: white;
+    }
+    /* Market information box title */
+    .one{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    /* Market information box content */
+    .ready{
+        height: 600px;
+        width: 100%;
+        border: 1px solid;
+        place-content: center;
+    }
+    /* Container for the ready to move in section */
+    .ready>div{
+        height: 400px;
+        width: 80vw;
+        box-shadow: 0px 0px 10px 0px gray;
+        background-image: url("../Images/readyhomeimage.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        transition: background-size 0.5s ease;
+        place-content: center;
+    }
+    /* Ready to move in section image hover effect */
+    .ready>div:hover{
+        transition-duration: 0.5s ease;
+        background-size: 120%;
+    }
+    .ready_heading{
+        width: 40vw;
+        border: 1px solid;
+        color: white;
+        font-weight: 700;
+        font-size: 30px;
+    }
+    .ready_title{
+        width: 40vw;
+        border: 1px solid;
+        color: white;
+        font-size: 20px;
+    }
+    .ready_links{
+        height: 60px;
+        width: 40vw;
+        border: 1px solid white;
+        display: flex;
+        gap: 20px;
     }
 }    

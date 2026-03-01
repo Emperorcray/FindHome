@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FindHome: Real Estate Listings</title>
+    <link rel="icon" type="image/png" href="Images/logo.png">
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
@@ -19,9 +22,9 @@
             <div class="logo">FindHome</div>
             <!-- Navigation links -->
             <div class="nav_link1 d-flex justify-content-evenly align-items-center">
-                <a href="index.html">Home</a>
-                <a href="">Listings</a>
-                <a href="">Contact</a>
+                <a href="index.html" style="background-color: black; color: white;">Home</a>
+                <a href="Templates/listings.html">Listings</a>
+                <a href="Templates/contact.html">Contact</a>
             </div>
             <!-- Login and sign up links-->
             <div class="nav_link2 d-flex justify-content-evenly align-items-center">
@@ -136,13 +139,61 @@
             <!-- Reasons container -->
             <div class="reasons_div d-flex justify-content-evenly align-items-center">
                 <!-- Individual reason boxes -->
-                <div class="reasons rounded-5"></div>
-                <div class="reasons rounded-5"></div>
-                <div class="reasons rounded-5"></div>
+                <div class="reasons rounded-5 align-content-center text-center">
+                    <!-- Icon for buying a home -->
+                    <i class="fi fi-rr-house-hand"></i>
+                    <div class="text-center reasons_title">Buy</div>
+                    <div class="reasons_info text-center">Find your dream home with our easy buying process</div>
+                </div>
+                <div class="reasons rounded-5 align-content-center text-center">
+                    <!-- Icon for renting a home -->
+                    <i class="fi fi-br-house-key"></i>
+                    <div class="text-center reasons_title">Rent</div>
+                    <div class="reasons_info text-center">Rent a home that fits your lifestyle and budget</div>
+                </div>
+                <div class="reasons rounded-5 align-content-center text-center">
+                    <!-- Icon for selling a home -->
+                    <i class="fi fi-br-home-settings"></i>
+                    <div class="text-center reasons_title">Mortgage</div>
+                    <div class="reasons_info text-center">Get a mortgage that fits your financial needs</div>
+                </div>
             </div>
         </div>
-
-
+        <!-- Market insights section -->
+        <div class="market">
+            <div class="market_heading text-center">Comprehensive Market Insights</div>
+            <div class="market_info d-flex justify-content-evenly align-items-center">
+                <img src="Images/5 beds 5 bathrooms.avif" alt="" class="rounded-5">
+                <div class="market_info_div d-flex flex-wrap justify-content-evenly align-content-center">
+                    <div class="rounded-5 text-center align-content-center">
+                        <div class="one">15+</div>
+                        <p class="two">Houses sold</p>
+                    </div>
+                    <div class="rounded-5 text-center align-content-center">
+                        <div class="one">20+</div>
+                        <p class="two">Agents</p>
+                    </div>
+                    <div class="rounded-5 text-center align-content-center">
+                        <div class="one">10+</div>
+                        <p class="two">Years of Experience</p>
+                    </div>
+                    <div class="rounded-5 text-center align-content-center">
+                        <div class="one">100%</div>
+                        <p class="two">Satisfaction Rate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ready d-grid">
+            <div class="rounded-5 d-grid text-center">
+                <div class="ready_heading"> Ready to Find Your Dream Home</div>
+                <div class="ready_title">Join thousands of satisfied customers who found their perfect home with FindHome.</div>
+                <div class="ready_links">
+                    <a href="">Start Your search</a>
+                    <a href="">Speak to an agent</a>
+                </div>
+            </div>
+        </div>
     </section>
     <footer></footer>
 </body>

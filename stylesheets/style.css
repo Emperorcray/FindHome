@@ -27,24 +27,29 @@ a{
     background-repeat: no-repeat;
 }
 @media screen and (min-width:1200px){
+    /* This styles the header element */
     header{
         height: 100px;
         width: 100%;
     }
+    /* This styles the navigation bar */
     nav{
         height: 70px;
         width: 80vw;
         background-color: white;
         z-index: 2;
     }
+    /* This styles the logo text */
     .logo{
         font-weight: 700;
         font-size: 20px;
     }
+    /* This styles the navigation links container */
     .nav_link1{
         height: 100%;
         width: 25vw;
     }
+    /* This styles the individual navigation links */
     .nav_link1>a{
         height: 40px;
         width: 6vw;
@@ -54,6 +59,7 @@ a{
         text-decoration: none;
         color: black;
     }
+    /* This styles the navigation links on hover */
     .nav_link1>a:hover{
         height: 40px;
         width: 6vw;
@@ -61,10 +67,12 @@ a{
         color: white;
         background-color: black;
     }
+    /* This styles the login and sign up links container */
     .nav_link2{
         height: 100%;
         width: 18vw;
     }
+    /* This styles the login and sign up links */
     .nav_link2>a{
         height: 40px;
         width: 8vw;
@@ -74,21 +82,24 @@ a{
         text-decoration: none;
         color: black;
     }
+    /* This styles the login link on hover */
     .login:hover{
         transition: 0.5s;
         color: white;
         background-color: black;
     }
+    /* This styles the sign up link on hover */
     .signin{
         border: 1px solid grey;
     }
+    /* This styles the sign up link on hover */
     .signin:hover{
         transition-duration: 0.5s;
         background-color: #d3d3d3;
     }
     /* This styles the section element */
     section{
-        height: 3500px;
+        height: 3220px;
         width: 100%;
         border: 1px solid;
     }
@@ -263,7 +274,7 @@ a{
     }
     /* Market information box content */
     .ready{
-        height: 600px;
+        height: 500px;
         width: 100%;
         border: 1px solid;
         place-content: center;
@@ -279,30 +290,50 @@ a{
         background-size: 100%;
         transition: background-size 0.5s ease;
         place-content: center;
+        gap: 20px;
     }
     /* Ready to move in section image hover effect */
     .ready>div:hover{
         transition-duration: 0.5s ease;
         background-size: 120%;
     }
+    /* Ready to move in section title */
     .ready_heading{
         width: 40vw;
-        border: 1px solid;
         color: white;
         font-weight: 700;
         font-size: 30px;
     }
+    /* Ready to move in section subtitle */
     .ready_title{
         width: 40vw;
-        border: 1px solid;
-        color: white;
+        color: gray;
         font-size: 20px;
     }
+    /* Container for the ready to move in section links */
     .ready_links{
         height: 60px;
         width: 40vw;
-        border: 1px solid white;
-        display: flex;
-        gap: 20px;
+    }
+    /* Search and speak to an agent buttons */
+    .search{
+        height: 40px;
+        width: 13vw;
+        background-color: white;
+        color: black;
+        font-size: 15px;
+    }
+    /* Search button hover effect */
+    .agent{
+        height: 40px;
+        width: 13vw;
+        color: white;
+        border: 1.5px solid white;
+        font-size: 15px;
+    }
+    .agent:hover{
+        transition-duration: 0.5s;
+        background-color: white;
+        color: black;
     }
 }    

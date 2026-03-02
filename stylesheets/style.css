@@ -101,7 +101,6 @@ a{
     section{
         height: 3220px;
         width: 100%;
-        border: 1px solid;
     }
     /* Main section container */
     .main_img{
@@ -123,6 +122,7 @@ a{
     .main_section_image:hover{
         transition-duration: 0.5s ease;
         background-size: 120%;
+        box-shadow: 0px 0px 15px 0px gray;
     }
     /* Title for the featured properties section */
     .title{
@@ -248,6 +248,7 @@ a{
     .market_info>img{
         height: 400px;
         width: 40vw;
+        box-shadow: 0px 0px 15px 0px gray;
     }
     /* Container for market information boxes */
     .market_info_div{
@@ -276,7 +277,6 @@ a{
     .ready{
         height: 500px;
         width: 100%;
-        border: 1px solid;
         place-content: center;
     }
     /* Container for the ready to move in section */
@@ -335,5 +335,10 @@ a{
         transition-duration: 0.5s;
         background-color: white;
         color: black;
+    }
+    footer{
+        height: 200px;
+        width: 100%;
+        border: 1px solid;
     }
 }    

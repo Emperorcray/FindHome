@@ -141,6 +141,6 @@ a{
         text-indent: 20px;
     }
     .search_bar>input:focus{
-        border: 3px solid black;
+        border: 3px solid skyblue;
     }
 }
